@@ -12,14 +12,18 @@ print(type("0613")) # <class 'str'>
 print(type(06.13))  # <class 'float'>
 print(type(True))   # <class 'bool'>
 
+
 # sep= : 문자열 사이 구분자(기본값: spacebar)
 print('t','e','s','t')  # t e s t (사이 띄기 해줌)
 print('t','e','s','t', sep="")  # test (붙여서 출력)
 print('t','e','s','t', sep="-") # t-e-s-t
 
+
+
 # end= : 출력문 끝나는 값 지정(기본값: enter)
 print('welcome to', end=' ')
 print('the black prade')    # welcome to the black prade                                     
+
 
 # format : %s(문자열, 정수, 실수 다 됨), %d(정수), %f(실수), %c(문자열 하나)
 print("%d" %100)    # 100
@@ -33,10 +37,12 @@ print("%-8.2f" % 123.21)    # -붙이면 왼쪽 정렬
 print("%8.2f" % 123.21)     # 정수는 8자리, 소수는 2자리
 print("%8.2f" % 123.213456) #   123.21
 
+
 # 변수 선언(타입 선언 x) = 값에 따라 타입이 결정됨
 number = 3
 print("I ate %d apples" % number)   # I ate 3 apples
 print("I ate", number, "apples")    # I ate 3 apples
+
 
 # TypeError: not enough arguments for format string
 # print("%d : %s" % 1, "홍길동")
